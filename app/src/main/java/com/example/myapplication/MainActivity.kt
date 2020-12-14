@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         binding.calcBtn.setOnClickListener{calculateTip()}
     }
     private fun calculateTip(){
-        val cost=binding.costOfService.text.toString().toDoubleOrNull()
+        val cost=binding.costOfServiceEditText.text.toString().toDoubleOrNull()
         if(cost==null){
             binding.tipResult.text=""
             return
